@@ -26,6 +26,9 @@ public class Manager {
         s.doTrick();
         s.runFast();
 
+        humanList.add(s);
+
+
 
 
 

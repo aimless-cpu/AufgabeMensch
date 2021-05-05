@@ -8,7 +8,8 @@ public class Club {
     Scanner sc = new Scanner(System.in);
     //instance
     private String name;
-    private List<Club> memberListClub = new ArrayList<>();
+    private List<Human> memberListClub = new ArrayList<>();
+
 
     //constructor
     public Club(String name) {
@@ -29,7 +30,7 @@ public class Club {
             System.out.println("runningSpeedWithBall");
             int runningSpeedWithBall = sc.nextInt();
             Striker striker = new Striker(name, age, injured, runningSpeed, runningSpeedWithBall);
-            memberListClub.add(striker);
+            this.memberListClub.add(striker);
 
         } else if (n == 2) {
             System.out.println("name?");
@@ -38,21 +39,24 @@ public class Club {
             int age = sc.nextInt();
             System.out.println("injured?");
             boolean injured = sc.nextBoolean();
-
+            System.out.println("reactionTime?");
+            int reactionTime = sc.nextInt();
+            System.out.println("jummpDistance?");
+            int jumpDistance = sc.nextInt();
+            Keeper keeper = new Keeper(name, age,injured, reactionTime, jumpDistance);
             memberListClub.add(keeper);
+        }
+    }
 
-        } else {
+    public void addMemberToClubFootballPlayer() {
             System.out.println("name?");
             String name = sc.next();
             System.out.println("age?");
             int age = sc.nextInt();
             System.out.println("injured?");
             boolean injured = sc.nextBoolean();
-            FootballPlayer footballPlayer = new FootballPlayer();
-
-        }
-
-
-
+            FootballPlayer footballPlayer = new FootballPlayer(name, age, injured);
+            this.memberListClub.add(footballPlayer);
     }
+
 }
