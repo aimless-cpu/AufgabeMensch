@@ -3,6 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.Callable;
 
 public class Manager {
     public void run() {
@@ -26,7 +27,26 @@ public class Manager {
         s.doTrick();
         s.runFast();
 
-        humanList.add(s);
+
+
+        Club liverpool = new Club("Liverpool");
+        int n = 1;
+        liverpool.addMemberToClub(n);
+        n = 2;
+        liverpool.addMemberToClub(n);
+
+
+        System.out.println(liverpool.getMemberListClub());
+
+
+
+
+
+
+
+
+
+
 
 
 

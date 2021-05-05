@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Club {
+public class Club extends Manager{
     Scanner sc = new Scanner(System.in);
     //instance
     private String name;
@@ -59,4 +59,25 @@ public class Club {
             this.memberListClub.add(footballPlayer);
     }
 
+
+
+    //getter setter
+
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Human> getMemberListClub() {
+        return memberListClub;
+    }
+
+    public void setMemberListClub(List<Human> memberListClub) {
+        this.memberListClub = memberListClub;
+    }
 }
