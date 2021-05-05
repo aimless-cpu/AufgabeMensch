@@ -22,6 +22,11 @@ public class Manager {
         f.doSport();
         f.getRidiculousHairStyleLevelString();
 
+        Striker s = new Striker("striker",22,false,10,5);
+        s.doTrick();
+        s.runFast();
+
+
 
 
 
