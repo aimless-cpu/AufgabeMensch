@@ -20,13 +20,15 @@ public class FootballPlayer extends Athlete{
         return;
     }
 
-
-    //getter setter
-
-    public int getRidiculousHairStyleLevel() {
-        return ridiculousHairStyleLevel;
+    public void getRidiculousHairStyleLevelString() {
+        Random rand = new Random();
+        this.ridiculousHairStyleLevel = 1000 + rand.nextInt(9999999);
+        System.out.println(getName() + " has a ridiculous hair style level of: " + this.ridiculousHairStyleLevel);
+        return;
     }
 
+
+    //getter setter
     public void setRidiculousHairStyleLevel(int ridiculousHairStyleLevel) {
         this.ridiculousHairStyleLevel = ridiculousHairStyleLevel;
     }

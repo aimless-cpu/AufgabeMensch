@@ -11,18 +11,18 @@ public class Manager {
         List<Human> humanList = new ArrayList<>();
 
         Programmer p = new Programmer("test",20, 20, 10);
-
         p.sleep();
         p.type();
 
         Athlete a = new Athlete("athlete", 20, false);
-
         a.getSuccesRate();
         a.doSport();
 
-        FootballPlayer f = new FootballPlayer("football", 23, false);
-
+        FootballPlayer f = new FootballPlayer("football player", 23, false);
         f.doSport();
+        f.getRidiculousHairStyleLevelString();
+
+
 
 
 
