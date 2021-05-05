@@ -11,4 +11,17 @@ public class Programmer extends Human {
         this.typeSpeed = typeSpeed;
         this.drinkSpeed = drinkSpeed;
     }
+
+    //method
+    public void type() {
+        System.out.println("typing " + this.typeSpeed + " characters per second." );
+    }
+
+    public void drinkSpeed() {
+        System.out.println("drinks 1 Cup of coffee in " + this.drinkSpeed + " seconds.");
+    }
+
+    public void sleep() {
+        System.out.println("sleep is redundant.");
+    }
 }
